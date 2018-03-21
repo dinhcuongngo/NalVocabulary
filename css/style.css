@@ -1,0 +1,144 @@
+/*============COMMON==================*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.clearfix::after, .clearfix::before {
+  content: " ";
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+a {
+  color: #000000; }
+
+header .home i.fa-home, header .home:hover, header nav a i, .content .tabcontent .row .home-result p.meaning {
+  color: #009933; }
+
+header nav a:hover i, .content .tabcontent .row .home-lang button, .content .tabcontent .row .home-result button, .content .tabcontent .row form div input[type="button"], .content .tabcontent .row .word-list .items .word button {
+  color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+/*============HEADER==================*/
+header {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #b3b3b3; }
+  header .home {
+    float: left;
+    font-weight: bold; }
+  header nav {
+    float: right; }
+    header nav a {
+      padding: 20px 10px; }
+    header nav a:hover {
+      background-color: #009933; }
+
+/*============CONTENT==================*/
+.content .tabcontent {
+  position: relative;
+  display: none;
+  padding: 20px 0px;
+  height: 100%; }
+  .content .tabcontent .row .home-lang, .content .tabcontent .row .home-result {
+    text-align: center; }
+    .content .tabcontent .row .home-lang button, .content .tabcontent .row .home-result button {
+      min-width: 100px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border: 0;
+      margin: 20px; }
+    .content .tabcontent .row .home-lang button.result, .content .tabcontent .row .home-result button.result {
+      background-color: #0066ff; }
+    .content .tabcontent .row .home-lang button.next, .content .tabcontent .row .home-result button.next {
+      background-color: #009933; }
+  .content .tabcontent .row .home-result {
+    display: none; }
+    .content .tabcontent .row .home-result p.voca {
+      font-size: 3em; }
+    .content .tabcontent .row .home-result p.meaning {
+      font-size: 2.5em; }
+    .content .tabcontent .row .home-result p::first-letter {
+      text-transform: capitalize; }
+  .content .tabcontent .row form {
+    display: table;
+    margin: 0 auto; }
+    .content .tabcontent .row form div {
+      display: table-row; }
+      .content .tabcontent .row form div h3, .content .tabcontent .row form div p, .content .tabcontent .row form div input {
+        display: table-cell; }
+      .content .tabcontent .row form div .title {
+        padding: 10px 0; }
+      .content .tabcontent .row form div .label {
+        font-weight: bold;
+        padding: 5px 0; }
+      .content .tabcontent .row form div input[type="text"] {
+        padding: 5px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border: 1px solid #cccccc; }
+      .content .tabcontent .row form div input[type="button"] {
+        margin: 10px 0;
+        background-color: #0066ff;
+        border: 1px solid #0066ff;
+        padding: 10px;
+        width: 100%;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px; }
+  .content .tabcontent .row .word-list {
+    display: table;
+    margin: 0 auto;
+    width: 30%; }
+    .content .tabcontent .row .word-list h3 {
+      text-align: center; }
+    .content .tabcontent .row .word-list .items p {
+      text-align: center; }
+    .content .tabcontent .row .word-list .items .word .meaning {
+      float: left; }
+      .content .tabcontent .row .word-list .items .word .meaning p {
+        margin: 5px 0;
+        text-align: left;
+        font-size: 14px; }
+      .content .tabcontent .row .word-list .items .word .meaning p::first-letter {
+        text-transform: capitalize; }
+    .content .tabcontent .row .word-list .items .word button {
+      float: right;
+      background-color: #ff0000;
+      border: 1px solid #ff0000;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px; }
+
+/*============RWD==================*/
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .container {
+    width: 95%;
+    margin: 0 auto; }
+
+  .content .tabcontent .row .word-list {
+    width: 100%; } }
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .content .tabcontent .row .word-list {
+    width: 100%; } }
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .content .tabcontent .row .word-list {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

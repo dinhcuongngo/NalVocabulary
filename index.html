@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>NAL Test for Frontend</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+</head>	
+<body>
+<!-- START OF HEADER -->
+<header class="clearfix">
+	<div class="container">
+		<a href="#home" class="home" onclick=displayPage('home')><i class="fas fa-home"></i> NAL - Vocabulary</a>
+		<nav>
+			<a href="#addNew" onclick=displayPage('add_new')><i class="fas fa-plus"></i> Add New World</a>
+		</nav>
+	</div>		
+</header>
+<!-- END OF HEADER -->
+
+<!-- START OF CONTENT -->
+<section class="content">
+	<div class="container">
+		<div id="home" class="tabcontent">
+			<div class="row">
+				<div class="home-lang">
+					<button class="result" onclick="changeLang('en')">ENGLISH</button>
+					<button class="next" onclick="changeLang('vn')">VIETNAMESE</button>
+				</div>
+				<div class="home-result">
+					<div class="display-voca">
+						<p class="voca" id="disVoca">Hello</p>
+						<button class="result" id="btnResult">Result</button>
+						<button class="next" id="btnNext">Next</button>
+					</div>
+					<p class="para-show" id="disPara">Time</p>
+					<p class="meaning" id="disMeaning"></p>
+				</div>
+			</div>
+		</div>
+		<div id="add_new" class="tabcontent">
+			<div class="row">
+				<form>
+					<div><h3 class="title">Add new word</h3></div>
+					<div><p class="label">English</p></div>
+					<div><input type="text" placeholder="Enter English" id="wordEng"></div>
+					<div><p class="label">Vietnamese</p></div>
+					<div><input type="text" placeholder="Enter Vietnamese" id="wordVn"></div>
+					<div><input type="button" value="Add" onclick="addNewWord()"></div>
+				</form>
+				<div class="word-list">
+					<h3>Word List</h3>
+					<div class="items">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END OF CONTENT -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
